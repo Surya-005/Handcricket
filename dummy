@@ -1,0 +1,602 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(42, 41, 41);
+}
+
+a {
+    text-decoration: none;
+}
+
+.landing_page {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 100vh;
+}
+
+/* navigation*/
+nav {
+    display: flex;
+    align-items: center;
+}
+
+#logo {
+    font-size: 2.2em;
+    font-weight: 900;
+    color: gold;
+    padding-left: 0.5em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* landing page */
+
+main {
+    display: flex;
+    position: relative;
+    align-items: center;height: 100vh;
+}
+
+.form_handcricket {
+    margin-top: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 5em;
+    background-color: rgba(0, 0, 0, 0.74);
+    border-radius: 3em;
+    padding: 1em;
+    box-shadow: 0 0 8px 1px black;
+    border: 2px solid gold;
+}
+
+.intro_quotes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.form_handcricket h2,
+.intro_quotes p,
+.intro_quotes h1,
+.intro_quotes h3 {
+    font-size: 1.5em;
+    color: white;
+    text-transform: capitalize;
+}
+
+.hand,
+.cricket {
+    font-size: 7em;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: white;
+    text-shadow: 0px 0px 10px black;
+}
+
+.cricket {
+    font-size: 6em;
+}
+
+.ha,
+.cket {
+    color: gold;
+    text-decoration: underline;
+}
+
+.form_handcricket h1 {
+    font-size: 2em;
+    color: gold;
+}
+
+.intro_quotes p {
+    font-size: 1.5em;
+}
+
+.intro_quotes h3 {
+    color: red;
+}
+
+.form_handcricket form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+}
+
+.form_handcricket form input,
+.toss_decition input {
+    outline: none;
+    background-color: transparent;
+    padding: 0.4em;
+    font-size: 1.2em;
+    border: none;
+    border-bottom: 3px solid whitesmoke;
+    color: gold;
+    text-align: center;
+    margin-bottom: 1em;
+    text-transform: uppercase;
+}
+
+.form_handcricket button,
+.toss_decition form button,
+#batting,
+#bowling,
+.match_summary_button,
+.intro_quotes button,
+.home_button,
+.about button {
+    background-color: black;
+    color: gold;
+    padding: 0.5em;
+    border-radius: 1em;
+    font-size: 1.2em;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.form_handcricket form button:hover {
+    color: black;
+    background-color: gold;
+}
+
+.intro_quotes button,
+.about button {
+    color: black;
+    background-color: gold;
+}
+
+.robot {
+    height: 600px;
+    position: absolute;
+    z-index: -1;
+    right: 5%;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    padding: 2em 2em 1em;
+    background-color: rgba(0, 0, 0, 0.927);
+    position:absolute;
+    top: 10%;
+    right: 2%;
+    left: 2%;
+    border-radius: 2em;
+    border: 2px solid gold;
+    display: none;
+}
+
+.about ol {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.about ol li {
+    color: whitesmoke;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.3em;
+    font-weight: 400;
+    text-transform: capitalize;
+    list-style-type: none;
+    text-align: left;
+    margin: 0.5em;
+}
+
+.about h1 {
+    font-size: 1.5em;
+    color: red;
+    text-transform: uppercase;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.about button {
+    align-self: center;
+}
+
+/* .shapes {
+    z-index: -3;
+    position: absolute;
+    height: 100px;
+    width: 100px;
+
+}
+
+.t1 {
+    top: 20%;
+    left: 0%;
+    transform: rotate(60deg);
+    /* height: 50px;
+    width: 50px; */
+/* }
+
+.t2 {
+    top: 20%;
+    left: 20%;
+    transform: rotate(60deg);
+    /* height: 30px;
+    width: 30px */
+/*
+
+.t3 {
+    top: 10%;
+    left: 60%;
+    transform: rotate(60deg);
+    /* height: 40px;
+    width: 40px; */
+/* }
+
+.t4 {
+    top: 10%;
+    left: 85%;
+    transform: rotate(60deg);
+ 
+}
+
+.t5 {
+    top: 20%;
+    left: 80%;
+    transform: rotate(60deg);
+ 
+}
+
+.t6 {
+    top: 90%;
+    left: 0%;
+    transform: rotate(60deg);
+ 
+}
+
+.t7 {
+    top: 80%;
+    left: 25%;
+    transform: rotate(60deg);
+ 
+}
+
+.t8 {
+    top: 80%;
+    left: 50%;
+    transform: rotate(60deg);
+ 
+}
+
+.t9 {
+    top: 90%;
+    left: 75%;
+    transform: rotate(60deg);
+
+}
+
+.t10 {
+    top: 70%;
+    left: 80%;
+    transform: rotate(60deg);
+    */
+/* }
+
+.t1,
+.t6 {
+    background: red;
+    animation: set1 5s ease-in-out infinite alternate;
+}
+
+.t2,
+.t7 {
+    background: blue;
+    animation: set2 5s ease-in-out infinite alternate;
+}
+
+.t3,
+.t8 {
+    background: green;
+    animation: set3 5s ease-in-out infinite alternate;
+}
+
+.t4,
+.t9 {
+    background: orange;
+    animation: set4 5s ease-in-out infinite alternate;
+}
+
+.t5,
+.t10 {
+    background: pink;
+    animation: set5 5s ease-in-out infinite alternate;
+} */
+/* 
+@keyframes set1 {
+    100% {}
+}
+
+@keyframes set2 {
+    100% {}
+}
+
+@keyframes set3 {
+    100% {}
+}
+
+@keyframes set4 {
+    100% {}
+}
+
+@keyframes set5 {
+    100% {}
+}  */
+
+
+
+
+
+
+
+
+/* toss */
+
+.entiretoss,
+#first_half,
+#second_half {
+    display: flex;
+    flex-direction: column;
+    padding: 0em 1em;
+    height: auto;
+}
+
+.heading {
+    align-self: center;
+    font-size: 3em;
+    text-shadow: 3px 1px rgb(6, 6, 6);
+    color: gold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.player_profile,
+.playerprofile {
+    display: flex;
+    justify-content: space-between;
+}
+
+.player {
+    display: flex;
+    height: 10rem;
+    width: 30%;
+}
+
+.player2 {
+    flex-direction: row-reverse;
+}
+
+.player_name_img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 50%;
+}
+
+.pimg,
+.cimg {
+    height: 100%;
+    width: 80%;
+    border-radius: 1em;
+    background-color: antiquewhite;
+}
+
+.pimg {
+    background: url('./gameImages/human.jpg') top/cover no-repeat;
+}
+
+.cimg {
+    background: url('./gameImages/computer.jpg') top/cover no-repeat;
+}
+
+.player p {
+    font-size: 1.5em;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    color: whitesmoke;
+}
+
+/* humanvalue-toss */
+#hv,
+/* computervalue-toss */
+#cv,
+#humanScore,
+#humanbowl,
+#computerScore,
+#computerbowl {
+    height: 100%;
+    width: 50%;
+}
+
+.result {
+    background-color: black;
+    border: 2px solid rgb(254, 4, 46);
+    border-radius: 1em;
+    height: 10rem;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 25%;
+    text-align: center;
+    overflow: auto;
+}
+
+#toss_result,
+.computer_tosswon,
+#first_half_result,
+#runsneed,
+#second_half_result,
+#need {
+    font-size: 1em;
+    color: azure;
+    text-transform: uppercase;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#ooe,
+#scoreBoard,
+#secondscoreBoard {
+    font-size: 3em;
+    color: gold;
+}
+
+#toss,
+.field {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2em;
+}
+
+.toss_decition form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.toss_decition input {
+    border-bottom: 2px solid black;
+}
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.buttons button,
+#gamebutton button,
+#bowlbutton button {
+    padding: 0.5em;
+    font-size: 1.2em;
+    outline: none;
+    background-color: black;
+    color: gold;
+}
+
+.buttons button:hover,
+#gamebutton button:hover,
+#bowlbutton button:hover {
+    background-color: gold;
+    color: black;
+
+}
+
+.field {
+    flex-direction: column;
+}
+
+.tossdetails,
+#first_half_score {
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-transform: capitalize;
+    color: gold;
+}
+
+/* match summary */
+.match_summary_button {
+    align-self: center;
+}
+
+.match_summary {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.match_summary ol {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    list-style-type: number;
+}
+
+.match_summary ol li {
+    font-size: 2em;
+    margin: 0.5em;
+    color: whitesmoke;
+    text-transform: capitalize;
+}
+
+#tosswon,
+.toss_decition,
+.buttons,
+.player_profile {
+    display: none;
+}
+
+.entiretoss,
+#first_half,
+#second_half,
+.match_summary,
+.match_summary_button {
+    display: none;
+}
+
+<!-- <div class="landing_page">
+<nav>
+    <h1 id="logo">HACKET</h1>
+</nav>
+<main>
+    <div class="form_handcricket">
+        <h1>HEY BUDDY WATSAPP!!!</h1>
+        <h2>come on lets play</h2>
+        <p class="hand"><span class="ha">ha</span>nd</p>
+        <p class="cricket">cri<span class="cket">cket</span></p>
+        <div class="intro_quotes">
+            <p>if you dont no about handcricket dont worry</p>
+            <h3>press this button </h3>
+            <button onclick="{aboutopen()}">About</button>
+            <form onsubmit="{(e)=>{e.preventDefault()}}">
+                <input id='player_name' type="text" autofocus required placeholder="---NAME---">
+                <button onclick="gototoss(event)">Lets Play</button>
+            </form>
+        </div>
+    </div>
+    <img class="robot" src="./gameImages/robot.png" alt="robot">
+
+
+ 
+</main>
+<div class="about">
+    <h1>about</h1>
+    <ol>
+        <li class="r1">1.Hand cricket is a game in which two play compete against each other using their
+            fingers. </li>
+        <li class="r2">2.In each turn, both players display a number using their fingers at the same time.
+        </li>
+        <li class="r3">3.If the scores match, the batsman is out, otherwise they gain their number as runs.
+        </li>
+        <li class="r4">4.Finally, the player who scores the most wins the game.</li>
+    </ol>
+    <button onclick="{aboutclose()}">close</button>
+</div>
+<div class="shapes t1"></div>
+<div class="shapes t2"></div>
+<div class="shapes t3"></div>
+<div class="shapes t4"></div>
+<div class="shapes t5"></div>
+<div class="shapes t6"></div>
+<div class="shapes t7"></div>
+<div class="shapes t8"></div>
+<div class="shapes t9"></div>
+<div class="shapes t10"></div> -->
+</div>
+
+
+scoreboard.innerHTML =`${playername} ${Number(scoreboard.innerHTML) + Number(hums)}`
+scoreboard.innerHTML = `COMPUTER ${Number(scoreboard.innerHTML) + coms}`;
