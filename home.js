@@ -110,6 +110,7 @@ function toss(e) {
         computer_tosswon_decition.innerHTML = `computer choose to ${computer_decition}`;
         tosswon.style.display = 'none'
         computer_decition == 'batting' ? setTimeout(bowling, 3000, playername, 'bat first') : setTimeout(batting, 3000, playername, 'bowl first')
+        document.querySelector('#toss h1').style.display='none'
     }
 }
 
@@ -201,8 +202,8 @@ let need = document.getElementById('need')
 function ball(event) {
     let humscore = event.target.innerHTML
     let comscore = Math.floor((Math.random() * 7))
-    playerone.setAttribute('src', `./gameImages/fingers/${finger[humscore]}.png`);
-    playertwo.setAttribute('src', `./gameImages/fingers/${finger[comscore]}.png`);
+    playertwo.setAttribute('src', `./gameImages/fingers/${finger[humscore]}.png`);
+    playerone.setAttribute('src', `./gameImages/fingers/${finger[comscore]}.png`);
 
     if (Number(humscore) == comscore) {
         need.innerHTML = ''
