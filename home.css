@@ -3,15 +3,12 @@
     padding: 0px;
     box-sizing: border-box;
 }
-
 body {
     background: url('./gameImages/2870174_6362.jpg') center/cover no-repeat;
 }
-
 a {
     text-decoration: none;
 }
-
 /* landing page */
 .landing_page {
     display: flex;
@@ -21,7 +18,6 @@ a {
     background: rgb(42, 41, 41);
     position: relative;
 }
-
 .form_handcricket {
     display: flex;
     flex-direction: column;
@@ -36,30 +32,23 @@ a {
     width: 50%;
     position: relative;
 }
-
-.hand,
-.cricket {
+.hand,.cricket {
     font-size: 8em;
     font-weight: 700;
     text-transform: uppercase;
     font-family: 'Chakra Petch', sans-serif;
-    /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
     color: white;
     text-shadow: 2px 2px 2px black;
     position: relative;
     z-index: 1;
 }
-
 .cricket {
     font-size: 7em;
 }
-
-.ha,
-.cket {
+.ha,.cket {
     color: red;
     text-decoration: underline;
 }
-
 .ball {
     height: 40px;
     width: 40px;
@@ -67,65 +56,23 @@ a {
     z-index: 0;
     animation: ball 3s ease-in-out infinite alternate;
 }
-
-.b1 {
-    top: 10%;
-    left: 10%;
-}
-
-.b2 {
-    top: 20%;
-    left: 80%;
-}
-
-.b3 {
-    top: 40%;
-    left: 80%;
-}
-
-.b4 {
-    top: 80%;
-    left: 30%;
-}
-
-.b5 {
-    top: 5%;
-    left: 50%;
-}
-
-.b6 {
-    top: 90%;
-    left: 40%;
-}
-
-.b7 {
-    top: 70%;
-    left: 70%;
-}
-
-.b8 {
-    top: 50%;
-    left: 10%;
-}
+.b1 {top: 10%;left: 10%;}
+.b2 {top: 20%;left: 80%;}
+.b3 {top: 40%;left: 80%;}
+.b4 {top: 80%;left: 30%;}
+.b5 {top: 5%;left: 50%;}
+.b6 {top: 90%;left: 40%;}
+.b7 {top: 70%;left: 70%;}
+.b8 {top: 50%;left: 10%;}
 @keyframes ball {
-    50% {
-        height: 45px;
-        width: 45px;
-    }
-
-    100% {
-        transform: rotate(360deg);
-    }
+    50% {height: 45px;width: 45px;}
+    100% {transform: rotate(360deg);}
 }
-
-
 .about form {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* padding: 1em; */
 }
-
 .about form input {
     outline: none;
     background-color: transparent;
@@ -138,7 +85,6 @@ a {
     margin-bottom: 1em;
     text-transform: uppercase;
 }
-
 button {
     padding: 0.5em;
     border-radius: 1em;
@@ -148,33 +94,27 @@ button {
     color: black;
     background-color: gold;
 }
-
 .about ol button {
     display: none;
 }
-
 .about form :last-child {
     display: none;
 }
-
 button:hover {
     background-color: black;
     color: gold;
 }
-
 .about {
     display: flex;
     flex-direction: column;
     padding: 1em 1em 0em;
     width: 50%;
 }
-
 .about ol {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
 }
-
 .about ol li {
     color: whitesmoke;
     font-family: Arial, Helvetica, sans-serif;
@@ -185,29 +125,22 @@ button:hover {
     text-align: left;
     margin: 0.5em;
 }
-
 .about ol li:first-child {
     font-size: 1.5em;
     color: red;
     text-transform: uppercase;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
-
 .about button {
     align-self: center;
 }
-
 /* toss */
-
-.entiretoss,
-#first_half,
-#second_half {
+.entiretoss,#first_half,#second_half {
     display: flex;
     flex-direction: column;
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.712);
 }
-
 .heading {
     align-self: center;
     font-size: 2em;
@@ -217,85 +150,68 @@ button:hover {
     height: 5%;
     text-align: center;
 }
-
-.player_profile,
-.playerprofile {
+.player_profile,.playerprofile {
     display: flex;
     justify-content: space-between;
     height: 35%;
 }
-
 .player {
     display: flex;
+    justify-content: space-around;
+    align-items: center;
     height: 100%;
     width: 30%;
     border-radius: 1em;
 }
-
 .player1 {
     border: 3px solid red;
     background: rgba(226, 170, 170, 0.795);
 }
-
 .player2 {
     flex-direction: row-reverse;
     border: 3px solid blue;
     background: rgba(114, 114, 172, 0.781);
 }
-
 .player_name_img {
     display: flex;
     flex-direction: column;
     height: 100%;
     width: 50%;
 }
-
-.pimg,
-.cimg {
+.pimg,.cimg {
     height: 80%;
     width: 80%;
     border-radius: 1em;
     filter: drop-shadow(5px 5px 0px black);
 }
-
 .player p {
     font-size: 1.5em;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     text-align: center;
     font-weight: 900;
 }
-
 /* humanvalue-toss */
 #hv,
 /* computervalue-toss */
-#cv,
-#humanScore,
-#humanbowl,
-#computerScore,
-#computerbowl {
+#cv,#humanScore,#humanbowl,#computerScore,#computerbowl {
     height: 90%;
-    width: 50%;
+    width: 25%;
     filter: drop-shadow(5px 0px 0px black);
 }
-
 .versus {
     align-self: center;
 }
-
 .versus h1 {
     font-size: 9em;
     color: whitesmoke;
     text-shadow: 1px 1px 2px black;
 }
-
 .versus h1 span:first-child {
     color: red;
 }
-
 .versus h1 span:last-child {
     color: blue;
 }
-
 .result {
     background-color: black;
     border: 2px solid white;
@@ -310,61 +226,43 @@ button:hover {
     overflow: auto;
     height: 30%;
 }
-
-.result :first-child,
-#toss h1{
+.result :first-child,#toss h1{
     color: white;
     text-transform: uppercase;
     text-decoration: underline;
 }
-
-.who_plays_batting_in_firsthalf,
-.who_plays_batting_in_secondhalf {
+.who_plays_batting_in_firsthalf,.who_plays_batting_in_secondhalf {
     color: whitesmoke;
     text-transform: uppercase;
 }
-
-#toss_result,
-.computer_tosswon,
-#first_half_result,
-#runsneed,
-#second_half_result,
-#need {
+#toss_result,.computer_tosswon,#first_half_result,#runsneed,#second_half_result,#need {
     font-size: 1em;
     color: azure;
     text-transform: uppercase;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-
-#ooe,
-#scoreBoard,
-#secondscoreBoard {
+#ooe,#scoreBoard,#secondscoreBoard {
     font-size: 3em;
     color: gold;
 }
-
-#toss,
-.field {
+#toss,.field {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 1.2em;
     height: 30%;
 }
-
 .toss_decition {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-
-#toss h1,.buttons h1 {
+#toss h1{
     font-size: 1.5em;
     margin-bottom: 0.5em;
     text-decoration: none;
     text-align: center;
 }
-
 .toss_decition button {
     background-color: transparent;
     color: gold;
@@ -374,19 +272,13 @@ button:hover {
     padding: 0.3em 1em;
     background-color: black;
 }
-
-.buttons,
-#gamebutton,
-#bowlbutton {
+.buttons,#gamebutton,#bowlbutton {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 }
-
-.buttons button,
-#gamebutton button,
-#bowlbutton button {
+.buttons button,#gamebutton button,#bowlbutton button {
     padding: 0.5em 1em;
     margin: 0 0.2em;
     font-size: 2em;
@@ -394,36 +286,27 @@ button:hover {
     background-color: black;
     color: gold;
 }
-
-.buttons button:hover,
-#gamebutton button:hover,
-#bowlbutton button:hover {
+.buttons button:hover,#gamebutton button:hover,#bowlbutton button:hover {
     background-color: gold;
     color: black;
 }
-
 .field {
     flex-direction: column;
 }
-
-.tossdetails,
-#first_half_score {
+.tossdetails,#first_half_score {
     text-align: center;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-transform: capitalize;
     color: gold;
     font-size: 1.5em;
 }
-
 #tosswon {
     text-align: center;
 }
-
 /* match summary */
 .match_summary_button {
     align-self: center;
 }
-
 .match_summary {
     background-color: rgba(0, 0, 0, 0.801);
     height: 100vh;
@@ -432,11 +315,9 @@ button:hover {
     justify-content: space-evenly;
     flex-direction: column;
 }
-
 .match_summary .heading {
     font-size: 3em;
 }
-
 .match_summary ol {
     background-color: rgba(0, 0, 0, 0.781);
     display: flex;
@@ -447,25 +328,15 @@ button:hover {
     border: 3px solid gold;
     border-radius: 1em;
 }
-
 .match_summary ol li {
     font-size: 2em;
     color: whitesmoke;
     text-transform: capitalize;
 }
-
-#tosswon,
-.toss_decition,
-.buttons,
-.player_profile {
+#tosswon,.toss_decition,.buttons,.player_profile {
     display: none;
 }
-
-.entiretoss,
-#first_half,
-#second_half,
-.match_summary,
-.match_summary_button {
+.entiretoss,#first_half,#second_half,.match_summary,.match_summary_button {
     display: none;
 }
 .not_available{

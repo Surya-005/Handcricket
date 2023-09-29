@@ -1,62 +1,47 @@
 @media screen and (max-width:1300px) {
-
-    .hand,
-    .cricket {
+    .hand,.cricket {
         font-size: 6em;
     }
-
     .player {
         width: 40%;
     }
     .versus h1 {
         font-size: 5em;
     }
-
     .result {
         width: 40%;
     }
-
-
     .about ol li {
         font-size: 1.1em;
     }
 }
-
 @media screen and (max-width:900px) {
-
-    .hand,
-    .cricket {
+    .hand,.cricket {
         font-size: 5.5em;
     }
     .player {
         width: 45%;
     }
 }
-
 @media screen and (max-width:800px) {
     .landing_page {
         flex-direction: column;
     }
-
     .form_handcricket {
         width: 100%;
         height: 70%;
         border-radius: 0 0 500px 500px;
         border: none;
     }
-
-    .hand,
-    .cricket {
+    .hand,.cricket {
         font-size: 7em;
     }
-
     .about {
         height: 30%;
         width: 100%;
     }
-
     .about ol {
-        position:absolute;
+        position: absolute;
         top: 10%;
         right: 10%;
         left: 10%;
@@ -64,13 +49,12 @@
         background-color: rgba(0, 0, 0, 0.879);
         z-index: 4;
         border-radius: 1em;
-        border:2px solid gold;
+        border: 2px solid gold;
         display: none;
     }
-    .about ol button{
+    .about ol button {
         display: flex;
     }
-
     .about form :last-child {
         display: flex;
         color: white;
@@ -80,416 +64,130 @@
         font-size: 1.5em;
         text-decoration: underline;
     }
-
     .about form input {
         font-size: 1.7em;
     }
-
     .heading {
         font-size: 1.8em;
     }
-
     .versus {
         display: none;
     }
-
-    .player_profile,
-    .playerprofile {
+    .player_profile,.playerprofile {
         justify-content: center;
         flex-direction: column;
         height: 47%;
     }
-
     .player {
         height: 50%;
         width: 70%;
     }
-
     .player2 {
         align-self: self-end;
     }
-
     .result {
         height: 23%;
         width: 80%;
         margin-top: 1em;
     }
-
-    .result :first-child,
-    .toss_decition h1 {
+    .result :first-child,.toss_decition h1 {
         font-size: 1.7em;
     }
-
-    #ooe,
-    #scoreBoard,
-    #secondscoreBoard {
+    #ooe,#scoreBoard,#secondscoreBoard {
         font-size: 3.5em;
     }
-
-    #toss_result,
-    .computer_tosswon,
-    #first_half_result,
-    #runsneed,
-    #second_half_result,
-    #need {
+    #toss_result,.computer_tosswon,#first_half_result,#runsneed,#second_half_result,#need {
         font-size: 1.5em;
     }
-
     .toss_decition button {
         font-size: 2em;
     }
-
-    #toss,
-    .field {
+    #toss,.field {
         height: 25%;
     }
-
-    .buttons button,
-    #gamebutton button,
-    #bowlbutton button {
-        padding: 0.7em 1em;
+    .buttons button,#gamebutton button,#bowlbutton button {
+        padding: 0.7em 0.8em;
     }
-
-    .tossdetails,
-    #first_half_score {
+    .tossdetails,#first_half_score {
         font-size: 1.5em;
     }
-
     button {
         font-size: 1.5em;
     }
-
     .match_summary .heading {
         font-size: 3.5em;
     }
 }
-
 @media screen and (max-width:500px) {
     .form_handcricket {
         height: 65%;
     }
-
-    .hand,
-    .cricket {
+    .hand,.cricket {
         font-size: 6em;
     }
-    .tossdetails,
-    #first_half_score {
+    .tossdetails,#first_half_score {
         font-size: 1.8em;
     }
-
-    .player_profile,
-    .playerprofile {
+    .player_profile,.playerprofile {
         height: 40%;
     }
-
     .player {
         width: 100%;
     }
-
     .result {
         height: 23%;
     }
-
-    #toss,
-    .field {
+    #toss,.field {
         height: 32%;
     }
-
-    #hv,
-    #cv,
-    #humanScore,
-    #humanbowl,
-    #computerScore,
-    #computerbowl {
+    #hv,#cv,#humanScore,#humanbowl,#computerScore,#computerbowl {
         height: 100%;
+        width: 60%;
     }
-
-    .tossdetails,
-    #first_half_score {
+    .tossdetails,#first_half_score {
         font-size: 1.5em;
     }
 }
-
 @media screen and (max-width:400px) {
-
-    .hand,
-    .cricket {
-        font-size: 4.8em;
+    .hand,.cricket {
+        font-size: 4.5em;
     }
-
     .about form input {
         font-size: 1.5em;
     }
-
     .toss_decition button {
         font-size: 2em;
     }
-
-    .buttons,
-    #gamebutton,
-    #bowlbutton {
+    .buttons,#gamebutton,#bowlbutton {
         font-size: 0.9em;
     }
-
     #ooe {
         font-size: 2em;
     }
-
-    #scoreBoard,
-    #secondscoreBoard {
+    #scoreBoard,#secondscoreBoard {
         font-size: 2.5em;
     }
 }
-
-
-/* responsive for height */
-@media screen and (max-height:950px) and (max-width:800px) {
-    .heading {
-        height: 5%;
-    }
-
-    .player_profile,
-    .playerprofile {
-        flex-direction: row;
-        height: 30%;
-    }
-
-    .player {
-        height: 100%;
-        width: 50%;
-    }
-
-    .result {
-        height: 30%;
-        width: 60%;
-    }
-
-    #toss,
-    .field {
-        height: 35%;
-    }
-
-}
-
-@media screen and (max-height:950px) and (max-width:650px) {
-    .player_name_img {
-        width: 40%;
-        justify-content: center;
-    }
-
-    .player_name_img p {
-        font-size: 1em;
-    }
-    .about ol {
-        position:absolute;
-        top: 10%;
-        right: 3%;
-        left: 3%;
-        bottom: 20%;
-    }
-
-    .pimg,
-    .cimg {
-        height: 50%;
-        width: 80%;
-    }
-
-    #hv,
-    #cv,
-    #humanScore,
-    #humanbowl,
-    #computerScore,
-    #computerbowl {
-        width: 60%;
-    }
-
-    .result {
-        width: 70%;
-    }
-}
-
-@media screen and (max-height:950px) and (max-width:550px) {
-
-    .player_profile,
-    .playerprofile {
-        height: 35%;
-    }
-
-    .player {
-        flex-direction: column;
-        height: 100%;
-        width: 50%;
-        align-items: center;
-        border-radius: 0.5em;
-    }
-
-    .player_name_img {
-        height: 12%;
-        width: 100%;
-        flex-direction: row;
-    }
-
-    .player_name_img p {
-        text-align: left;
-        font-size: 1.7em;
-        color: gold;
-        text-shadow: 2px 2px 0px black;
-    }
-
-    .pimg,
-    .cimg {
-        display: none;
-    }
-
-    #hv,
-    #cv,
-    #humanScore,
-    #humanbowl,
-    #computerScore,
-    #computerbowl {
-        height: 80%;
-        width: 90%;
-    }
-
-    .result {
-        height: 25%;
-        width: 80%;
-    }
-    .match_summary ol li {
-        font-size: 1.1em;
-    }
-
-}
-
-
-@media screen and (max-height:800px) and (max-width:800px) {
-
-    .buttons button,
-    #gamebutton button,
-    #bowlbutton button {
-        padding: 0.7em 1em;
-        font-size: 1.5em;
-    }
-
-    .result {
-        height: 32%;
-    }
-
-    #toss,
-    .field {
-        height: 32%;
-    }
-
-    .heading {
-        margin-bottom: 0.2em;
-    }
-
-    .match_summary .heading {
-        font-size: 2.4em;
-    }
-
-}
-
-@media screen and (max-height:750px) and (max-width:800px) {
-
-    .hand,
-    .cricket {
-        font-size: 4.5em;
-    }
-
-    button {
-        font-size: 1.3em;
-    }
-
-    .about form input {
-        font-size: 1.2em;
-    }
-    .about form :last-child {
-        font-size: 1.2em;
-    }
-
-
-    .toss_decition button {
-        font-size: 1.5em;
-    }
-
-    .result :first-child,
-    .toss_decition h1,
-    .who_plays_batting_in_firsthalf,
-    .who_plays_batting_in_secondhalf {
-        font-size: 1.2em;
-    }
-
-    #toss_result,
-    .computer_tosswon,
-    #first_half_result,
-    #runsneed,
-    #second_half_result,
-    #need {
-        font-size: 1.1em;
-    }
-
-    #ooe,
-    #scoreBoard,
-    #secondscoreBoard {
-        font-size: 2em;
-    }
-
-    .match_summary ol li {
-        font-size: 1.3em;
-    }
-
-    .tossdetails,
-    #first_half_score {
-        font-size: 1.3em;
-    }
-    .ball {
-        height: 30px;
-        width: 30px;
-    }
-
-    @keyframes ball {
-        50% {
-            height: 34px;
-            width: 34px;
-        }
-
-        100% {
-            transform: rotate(360deg);
-        }
-    }
-}
-
-
 /* responsive landscape */
 @media screen and (orientation:landscape) and (max-height:500px) {
-    body{
+    body {
         background: black;
         height: 100vh;
         display: flex;
         align-items: center;
         justify-content: center;
     }
-    .not_available{
+    .not_available {
         color: gold;
         display: flex;
         text-align: center;
         font-size: 1.3em;
         text-transform: capitalize;
-
     }
-
-    .landing_page{
+    .landing_page {
         display: none;
     }
-    .entiretoss,
-    #first_half,
-    #second_half,
-    .match_summary,
-    .match_summary_button {
+    .entiretoss,#first_half,#second_half,.match_summary,.match_summary_button {
         display: none !important;
     }
- 
-
 }

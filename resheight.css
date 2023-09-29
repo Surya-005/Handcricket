@@ -1,0 +1,348 @@
+/* responsive for height */
+@media screen and (max-height:950px) and (max-width:800px) {
+    .heading {
+        height: 5%;
+    }
+    .player_profile,.playerprofile {
+        flex-direction: row;
+        height: 30%;
+    }
+    .player {
+        height: 100%;
+        width: 50%;
+    }
+    .result {
+        height: 30%;
+        width: 60%;
+    }
+    #toss,.field {
+        height: 35%;
+    }
+}
+@media screen and (max-height:950px) and (max-width:650px) {
+    .player_name_img {
+        width: 40%;
+        justify-content: center;
+    }
+    .player_name_img p {
+        font-size: 1em;
+    }
+    .about ol {
+        position: absolute;
+        top: 10%;
+        right: 3%;
+        left: 3%;
+        bottom: 20%;
+    }
+    .pimg,.cimg {
+        height: 50%;
+        width: 80%;
+    }
+    .result {
+        width: 70%;
+    }
+    #ooe,#scoreBoard,#secondscoreBoard {
+        font-size: 3em;
+    }
+    #toss_result,.computer_tosswon,#first_half_result,#runsneed,#second_half_result,#need {
+        font-size: 1.3em;
+    }
+}
+@media screen and (max-height:950px) and (max-width:550px) {
+    .player_profile,.playerprofile {
+        height: 35%;
+    }
+    .player {
+        flex-direction: column;
+        height: 100%;
+        width: 50%;
+        align-items: center;
+        border-radius: 0.5em;
+    }
+    .player_name_img {
+        height: 12%;
+        width: 100%;
+        flex-direction: row;
+    }
+    .player_name_img p {
+        text-align: left;
+        font-size: 1.7em;
+        color: gold;
+        text-shadow: 2px 2px 0px black;
+    }
+    .pimg,.cimg {
+        display: none;
+    }
+    #hv,#cv,#humanScore,#humanbowl,#computerScore,#computerbowl {
+        height: 80%;
+        width: 60%;
+    }
+    .result {
+        height: 25%;
+        width: 80%;
+    }
+    .match_summary ol li {
+        font-size: 1.1em;
+    }
+}
+@media screen and (max-height:800px) and (max-width:800px) {
+    .buttons button,#gamebutton button,#bowlbutton button {
+        padding: 0.7em 1em;
+        font-size: 1.5em;
+    }
+    .result {
+        height: 32%;
+    }
+    #toss,.field {
+        height: 32%;
+    }
+    .heading {
+        margin-bottom: 0.2em;
+    }
+    .match_summary .heading {
+        font-size: 2.4em;
+    }
+}
+
+@media screen and (max-height:750px) and (max-width:800px) {
+    .hand,.cricket {
+        font-size: 4.5em;
+    }
+    button {
+        font-size: 1.3em;
+    }
+    .about form input {
+        font-size: 1.2em;
+    }
+    .about form :last-child {
+        font-size: 1.2em;
+    }
+    .toss_decition button {
+        font-size: 1.5em;
+    }
+    .result :first-child,.toss_decition h1,.who_plays_batting_in_firsthalf,.who_plays_batting_in_secondhalf {
+        font-size: 1.2em;
+    }
+    #toss_result,.computer_tosswon,#first_half_result,#runsneed,#second_half_result,#need {
+        font-size: 1.1em;
+    }
+    #ooe,#scoreBoard,#secondscoreBoard {
+        font-size: 2em;
+    }
+    .match_summary ol li {
+        font-size: 1.3em;
+    }
+    .tossdetails,#first_half_score {
+        font-size: 1.3em;
+    }
+    .ball {
+        height: 30px;
+        width: 30px;
+    }
+    @keyframes ball {
+        50% {height: 34px;width: 34px;}
+        100% {transform: rotate(360deg);}
+    }
+}
+@media screen and (max-height:600px) and (max-width:600px) {
+    .hand,.cricket {
+        font-size: 4em;
+    }
+    button {
+        font-size: 1em;
+    }
+    .heading {
+        font-size: 1em;
+    }
+    .player p {
+        font-size: 1em;
+    }
+    .result {
+        margin: 0;
+    }
+    #toss,.field {
+        padding: 0;
+    }
+    #toss h1 {
+        font-size: 1em;
+    }
+    .toss_decition button {
+        font-size: 1em;
+    }
+    .about ol {
+        font-size: 0.8em;
+    }
+    .about form input {
+        font-size: 1em;
+    }
+    .buttons button,#gamebutton button,#bowlbutton button {
+        padding: 0.5em 0.7em;
+    }
+    .tossdetails,#first_half_score {
+        font-size: 1em;
+        padding: 0.5em;
+    }
+    #toss_result,.computer_tosswon,#first_half_result,#runsneed,#second_half_result,#need {
+        font-size: 0.8em;
+    }
+    #ooe,#scoreBoard,#secondscoreBoard {
+        font-size: 2em;
+    }
+    .match_summary .heading {
+        font-size: 2em;
+    }
+    .match_summary ol li {
+        font-size: 1.1em;
+    }
+}
+@media screen and (min-width:800px) and (min-height:800px) {
+    .landing_page {
+        flex-direction: column;
+    }
+    .about ol li {
+        font-size: 1.5em;
+    }
+    .form_handcricket {
+        width: 100%;
+        height: 70%;
+        border-radius: 0 0 500px 500px;
+        border: none;
+    }
+    .hand,.cricket {
+        font-size: 9em;
+    }
+    .about {
+        height: 30%;
+        width: 100%;
+    }
+    .about ol {
+        position: absolute;
+        top: 10%;
+        right: 10%;
+        left: 10%;
+        bottom: 30%;
+        background-color: rgba(0, 0, 0, 0.879);
+        z-index: 4;
+        border-radius: 1em;
+        border: 2px solid gold;
+        display: none;
+    }
+    .about ol button {
+        display: flex;
+    }
+    .about form :last-child {
+        display: flex;
+        color: white;
+        margin-top: 0.5em;
+        text-transform: capitalize;
+        font-weight: 400;
+        font-size: 1.5em;
+        text-decoration: underline;
+    }
+    .about form input {
+        font-size: 1.7em;
+    }
+    .result :first-child,.toss_decition h1 {
+        font-size: 1.7em;
+    }
+    #ooe,#scoreBoard,#secondscoreBoard {
+        font-size: 3.5em;
+    }
+    #toss_result,.computer_tosswon,#first_half_result,#runsneed,#second_half_result,#need {
+        font-size: 1.3em;
+    }
+    .toss_decition button {
+        font-size: 2.5em;
+    }
+    #toss,.field {
+        height: 25%;
+        justify-content: space-evenly;
+    }
+    .buttons button,#gamebutton button,#bowlbutton button {
+        font-size: 2em;
+    }
+    .tossdetails,#first_half_score {
+        font-size: 1.8em;
+    }
+    .match_summary .heading {
+        font-size: 3.5em;
+    }
+    .match_summary ol li {
+        font-size: 2.5em;
+    }
+}
+@media screen and (min-width:800px) and (min-height:950px) {
+    button {
+        font-size: 2em;
+    }
+    .heading {
+        font-size: 1.8em;
+    }
+    .versus {
+        display: none;
+    }
+    .player_profile,.playerprofile {
+        justify-content: center;
+        flex-direction: column;
+        height: 47%;
+    }
+    .player {
+        height: 50%;
+        width: 70%;
+    }
+    .player2 {
+        align-self: flex-end;
+    }
+    .result {
+        height: 23%;
+        width: 80%;
+        margin-top: 1em;
+    }
+ 
+}
+@media screen and (min-width:950px) and (min-height:950px) {
+    .about ol li {
+        font-size: 1.7em;
+    }
+    .player {
+        width: 50%;
+    }
+    .result {
+        width: 60%;
+    }
+}
+@media screen and (min-width:1200px) and (min-height:950px) {
+    .heading {
+        font-size: 3em;
+    }
+    .about ol li {
+        font-size: 2em;
+    }
+    .player_profile,.playerprofile {
+        flex-direction: row;
+        align-items: center;
+    }
+    .player2 {
+        align-self: center;
+    }
+    .player {
+        height: 80%;
+        width: 50%;
+    }
+    .player p {
+        font-size: 2em;
+    }
+    .result {
+        width: 40%;
+    }
+    .match_summary ol {
+        padding: 2em;
+        padding-left: 4em;
+    }
+    .match_summary ol li {
+        font-size: 3em;
+    }
+    #toss_result,.computer_tosswon,#first_half_result,#runsneed,#second_half_result,#need {
+        font-size: 1.8em;
+    }
+}
